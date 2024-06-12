@@ -9,6 +9,7 @@ namespace RayTracing
         public Point A {  get; set; }
         public Point B {  get; set; }
         public Point C {  get; set; }
+        public Color Color { get; set; }
         public Polygon(Vector3 a, Vector3 b, Vector3 c)
         {
             A = new Point(a);
