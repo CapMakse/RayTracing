@@ -15,6 +15,13 @@ namespace RayTracing
         {
              point.P += transposition;
         }
+        static public void Shift(List<Point> points, Vector3 transposition)
+        {
+            foreach (Point point in points)
+            {
+               Shift(point, transposition);
+            }
+        }
         static public void Rotate(Point point, Vector3 axisStart, Vector3 axisEnd, double angle)
         {
             angle = (angle * Math.PI / 180) / 2;

@@ -10,11 +10,12 @@ namespace RayTracing
         public Point B {  get; set; }
         public Point C {  get; set; }
         public Color Color { get; set; }
-        public Polygon(Vector3 a, Vector3 b, Vector3 c)
+        public Polygon(Vector3 a, Vector3 b, Vector3 c, Color color)
         {
             A = new Point(a);
             B = new Point(b);
             C = new Point(c);
+            Color = color;
         }
         public float Intersect(Vector3 Ray)
         {
